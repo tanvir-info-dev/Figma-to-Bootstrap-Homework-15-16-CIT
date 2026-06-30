@@ -23,7 +23,9 @@
     border-radius: 12px;
     background-color: var(--primary-color);
 }
+
 /* ============= Header ============= */
+
 .navbar{
     background-color: var(--dark-color);
     padding: 12px 0px !important;
@@ -43,4 +45,49 @@
 }
 .nav-item .nav-link.active{
     color: white !important;
+}
+
+/* ============= Banner ============= */
+
+.banner{
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.banner_wrapper{
+    padding: 128px 0;
+    color: white;
+}
+.banner_wrapper h6{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.banner_wrapper h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: -1%;
+    width: 590px;
+    text-transform: uppercase;
+    padding: 16px 0 32px 0;
+}
+.banner_wrapper p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 338px;
+    margin-left: 30px;
+    margin-top: 64px;
+    position: relative;
+}
+.banner_wrapper p::before{
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: -30px;
+    top: 12px;
 }
